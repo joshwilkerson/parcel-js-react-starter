@@ -1,17 +1,8 @@
-import React, { Fragment } from 'react'
+import React from 'react'
 import ReactDOM from 'react-dom'
-import Counter from './js/counter'
+import App from './components/app'
 
-import './sass/main.scss'
-
-const App = () => {
-	return (
-		<Fragment>
-			<h1>👋 Parcel JS starter</h1>
-			<Counter />
-		</Fragment>
-	)
-}
+import './assets/sass/main.scss'
 
 ReactDOM.render(<App />, document.getElementById('app'))
 
