@@ -11,6 +11,7 @@
     "start": "cross-env NODE_ENV=development parcel ./src/index.html --port 1111 --open",
     "restart": "cross-env NODE_ENV=development parcel ./src/index.html --port 1111",
     "prettier": "prettier --write 'src/**/*.js'",
+    "eslint": "eslint src/ --ext .js --ext .jsx",
     "build": "cross-env NODE_ENV=production parcel build ./src/index.html --no-cache --no-minify --no-source-maps --public-url /"
   },
   "dependencies": {
@@ -40,7 +41,10 @@
     "@babel/plugin-proposal-object-rest-spread": "^7.4.4",
     "@babel/preset-env": "^7.4.3",
     "@babel/preset-react": "^7.0.0",
+    "babel-eslint": "^10.0.2",
     "cross-env": "^5.2.0",
+    "eslint": "^6.0.1",
+    "eslint-plugin-react": "^7.14.2",
     "minions.css": "^0.3.2",
     "node-sass": "^4.11.0",
     "parcel-bundler": "^1.12.3",
