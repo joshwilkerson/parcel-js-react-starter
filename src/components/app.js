@@ -1,12 +1,10 @@
-import React, { Fragment } from 'react'
-import Counter from './counter'
+import React from 'react'
 
 const App = () => {
 	return (
-		<Fragment>
+		<div className="p-2e">
 			<h1>👋 Parcel JS starter</h1>
-			<Counter />
-		</Fragment>
+		</div>
 	)
 }
 
