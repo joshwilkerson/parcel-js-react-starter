@@ -19,7 +19,7 @@ class Counter extends React.Component {
 
 	render() {
 		return (
-			<div className="counterWrapper">
+			<div>
 				<h1>Count: {this.state.count}</h1>
 				<button onClick={this.handleIncreaseCount}>+1</button>
 				<button onClick={this.handleDecreaseCount}>-1</button>
@@ -27,10 +27,6 @@ class Counter extends React.Component {
 			</div>
 		)
 	}
-}
-
-Counter.defaultProps = {
-	count: 0,
 }
 
 export default Counter

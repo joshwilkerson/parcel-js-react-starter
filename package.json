@@ -10,6 +10,7 @@
   "scripts": {
     "start": "cross-env NODE_ENV=development parcel ./src/index.html --port 1111 --open",
     "restart": "cross-env NODE_ENV=development parcel ./src/index.html --port 1111",
+    "prettier": "prettier --write 'src/**/*.js'",
     "build": "cross-env NODE_ENV=production parcel build ./src/index.html --no-cache --no-minify --no-source-maps --public-url /"
   },
   "dependencies": {
