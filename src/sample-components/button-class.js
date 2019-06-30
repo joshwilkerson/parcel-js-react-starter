@@ -1,18 +1,13 @@
 import React from 'react'
+import { string } from 'prop-types'
 
 class Button extends React.Component {
-	constructor(props) {
-		super(props)
-
-		this.state = {
-			buttonText: this.props.buttonText,
-			successText: this.props.successText,
-		}
-
-		this.handleClick = this.handleClick.bind(this)
+	state = {
+		buttonText: this.props.buttonText,
+		successText: this.props.successText,
 	}
 
-	handleClick() {
+	handleClick = () => {
 		this.setState({
 			buttonText: this.state.successText,
 		})
@@ -26,6 +21,11 @@ class Button extends React.Component {
 Button.defaultProps = {
 	buttonText: 'click this button...',
 	successText: 'good job, buddy!',
+}
+
+Button.propTypes = {
+	buttonText: string,
+	successText: string,
 }
 
 export default Button

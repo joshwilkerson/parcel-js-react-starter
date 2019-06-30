@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { string } from 'prop-types'
 
 const Button = props => {
 	const [buttonText, setButtonText] = useState(
@@ -9,6 +10,11 @@ const Button = props => {
 		setButtonText(props.successText || 'good job, buddy!')
 
 	return <button onClick={handleClick}>{buttonText}</button>
+}
+
+Button.propTypes = {
+	buttonText: string,
+	successText: string
 }
 
 export default Button
