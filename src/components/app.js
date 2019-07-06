@@ -2,8 +2,9 @@ import React from 'react'
 
 const App = () => {
 	return (
-		<div className="p-2e">
-			<h1>👋 Parcel JS starter</h1>
+		<div style={{ padding: 20 }}>
+			<h1>🚀 Parcel + ⚡️ React</h1>
+			<h2>Happy coding! 😄</h2>
 		</div>
 	)
 }
