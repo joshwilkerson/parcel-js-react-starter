@@ -45,12 +45,10 @@
     "cross-env": "^5.2.0",
     "eslint": "^6.0.1",
     "eslint-plugin-react": "^7.14.2",
-    "minions.css": "^0.3.2",
     "node-sass": "^4.11.0",
     "parcel-bundler": "^1.12.3",
     "parcel-plugin-prettier": "^0.0.4",
-    "prettier": "^1.10.2",
-    "styled-components": "^4.3.2"
+    "prettier": "^1.10.2"
   },
   "browserslist": [
     "> 1%",
