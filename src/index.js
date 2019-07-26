@@ -6,5 +6,6 @@ import './assets/sass/main.scss'
 
 ReactDOM.render(<App />, document.getElementById('app'))
 
-// eslint-disable-next-line no-undef
-module.hot && module.hot.accept()
+if (module.hot) {
+	module.hot.accept()
+}

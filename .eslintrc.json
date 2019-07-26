@@ -1,9 +1,20 @@
 {
-  "parser": "babel-eslint",
-  "extends": ["eslint:recommended", "plugin:react/recommended"],
+  "plugins": ["prettier"],
+  "extends": ["prettier", "prettier/react"],
+  "parserOptions": {
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
   "env": {
-    "browser": true,
-    "jest": true,
-    "es6": true
+    "es6": true,
+    "node": true,
+    "browser": true
+  },
+  "rules": {
+    "filenames/match-exported": 0,
+    "prettier/prettier": "error",
+    "react/no-unescaped-entities": 0
   }
 }
