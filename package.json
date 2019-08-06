@@ -8,18 +8,33 @@
     "url": "https://github.com/joshwilkerson/parcel-js-react-starter"
   },
   "scripts": {
-    "start": "cross-env NODE_ENV=development parcel ./src/index.html --port 1111 --open",
-    "restart": "cross-env NODE_ENV=development parcel ./src/index.html --port 1111",
-    "prettier": "prettier --write 'src/**/*.js'",
-    "eslint": "eslint src/ --ext .js --ext .jsx",
-    "build": "cross-env NODE_ENV=production parcel build ./src/index.html --no-cache --no-minify --no-source-maps --public-url /"
+    "start": "cross-env NODE_ENV=development parcel src/index.html --port 1234 --open",
+    "restart": "cross-env NODE_ENV=development parcel src/index.html --port 1234",
+    "prettier": "prettier --write './src/**/*.js'",
+    "eslint": "eslint ./src",
+    "build": "cross-env NODE_ENV=production parcel build src/index.html --no-minify --public-url /"
   },
   "dependencies": {
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.5.5",
+    "@babel/plugin-proposal-class-properties": "^7.5.5",
+    "@babel/plugin-proposal-object-rest-spread": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "@babel/preset-react": "^7.0.0",
     "autoprefixer": "^9.6.1",
     "browserslist": "^4.6.6",
-    "prop-types": "^15.7.2",
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6"
+    "cross-env": "^5.2.0",
+    "eslint": "^6.1.0",
+    "eslint-config-prettier": "^2.9.0",
+    "eslint-plugin-prettier": "^2.5.0",
+    "node-sass": "^4.12.0",
+    "normalize.css": "^8.0.1",
+    "parcel-bundler": "^1.4.1",
+    "prettier": "^1.10.2",
+    "prop-types": "^15.7.2"
   },
   "postcss": {
     "modules": false,
@@ -28,22 +43,6 @@
         "flexbox": "no-2009"
       }
     }
-  },
-  "devDependencies": {
-    "@babel/core": "^7.5.5",
-    "@babel/plugin-proposal-class-properties": "^7.5.5",
-    "@babel/plugin-proposal-object-rest-spread": "^7.5.5",
-    "@babel/preset-env": "^7.5.5",
-    "@babel/preset-react": "^7.0.0",
-    "babel-eslint": "^10.0.2",
-    "cross-env": "^5.2.0",
-    "eslint": "^6.1.0",
-    "eslint-plugin-react": "^7.14.2",
-    "node-sass": "^4.12.0",
-    "normalize.css": "^8.0.1",
-    "parcel-bundler": "^1.12.3",
-    "parcel-plugin-prettier": "^0.0.4",
-    "prettier": "^1.18.2"
   },
   "browserslist": [
     "> 1%",

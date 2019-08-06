@@ -1,15 +1,15 @@
 {
-"presets": [
-   [
-     "@babel/preset-env",
-     "@babel/preset-react",
-     {
-       "useBuiltIns": "entry"
-     }
-   ]
- ],
- "plugins": [
-   "@babel/plugin-proposal-class-properties",
-   "@babel/plugin-proposal-object-rest-spread"
- ]
+  "presets": [
+    [
+      "@babel/preset-env",
+      {
+        "useBuiltIns": "entry"
+      }
+    ],
+    ["@babel/preset-react"]
+  ],
+  "plugins": [
+    ["@babel/plugin-proposal-class-properties", {}, 'class-properties'],
+    ["@babel/plugin-proposal-object-rest-spread", {}, 'object-rest-spread']
+  ]
 }
